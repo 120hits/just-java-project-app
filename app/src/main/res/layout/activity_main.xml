@@ -20,6 +20,17 @@
         android:layout_marginBottom="16dp"
         android:text="@string/quantity"/>
 
+
+    <Button
+        android:id="@+id/PLUS_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:paddingStart="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="@string/plus"
+        android:onClick="increment"/>
+
     <TextView
         android:id="@+id/quantity_text_view"
         android:layout_width="wrap_content"
@@ -28,6 +39,15 @@
         android:textColor="@android:color/black"
         android:text="@string/zero"
         />
+    <Button
+        android:id="@+id/MINUS_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:paddingStart="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="@string/minus"
+        android:onClick="decrement"/>
 
     <TextView
         android:id="@+id/price"
@@ -54,7 +74,9 @@
         android:id="@+id/ORDER_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:paddingStart="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
         android:text="@string/ORDER_button"
         android:onClick="submitOrder"/>
 

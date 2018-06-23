@@ -28,13 +28,31 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+    /**
+     * This method is called when the order button is clicked.
+     */
+    public void increment(View view) {
+        int quantity = 3;
+        display(quantity);
+
+
+    }
+    /**
+     * This method is called when the order button is clicked.
+     */
+    public void decrement(View view) {
+        int quantity = 1;
+        display(quantity);
+
+    }
 
     /**
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
-        display(2);
-        display(2 * 5); //2 cups of coffee X $5 each
+        int quantity = 7;
+        display(quantity);
+        displayPrice(quantity * 5); //2 cups of coffee X $5 each
 
     }
 
