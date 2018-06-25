@@ -10,7 +10,6 @@
 package com.rrs.justjava;
 
 
-
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -28,20 +27,24 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
     /**
      * This method is called when the order button is clicked.
      */
     public void increment(View view) {
-        int quantity = 3;
+        int quantity = 2;
+        quantity = 3;
         display(quantity);
 
 
     }
+
     /**
      * This method is called when the order button is clicked.
      */
     public void decrement(View view) {
-        int quantity = 1;
+        int quantity = 2;
+        quantity = 1;
         display(quantity);
 
     }
