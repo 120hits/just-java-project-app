@@ -58,8 +58,6 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
-        int quantity = 7;
-        display(quantity);
         displayPrice(quantity * 5); //2 cups of coffee X $5 each
 
     }
@@ -84,23 +82,26 @@ public class MainActivity extends AppCompatActivity {
 }
 
 /*
-* in this update 1.1
-* we have moved our default quantity value from
-*  inside our 2 methods increment and decrement
-*  moved it outside the methods to make it a global variable
-* We have also set the quantity to increase/decrease by 1
-*  inside our 2 methods
-* We have changed our default value to 0
-*  we have to also changed from 2 to 0 inside our strings.xml
-*  now it will display as 0
-*
-* As you can see we need to change the code in two different places
-*  MainActivity.java
-*  strings.xml
-*  An advanced way to solve this problem is
-*   have the main activity actually display the quantity of zero immediately when the app launches
-*   , instead of relying on the layout to have an initial value
-*   that way teh single source of truth would be this global variable
-*
-*
-* */
+ * Update 1.1
+ * we have moved our default quantity value from
+ *  inside our 2 methods increment and decrement
+ *  moved it outside the methods to make it a global variable
+ * We have also set the quantity to increase/decrease by 1
+ *  inside our 2 methods
+ * We have changed our default value to 0
+ *  we have to also changed from 2 to 0 inside our strings.xml
+ *  now it will display as 0
+ *
+ * As you can see we need to change the code in two different places
+ *  MainActivity.java
+ *  strings.xml
+ *  An advanced way to solve this problem is
+ *   have the main activity actually display the quantity of zero immediately when the app launches
+ *   , instead of relying on the layout to have an initial value
+ *   that way teh single source of truth would be this global variable
+ *
+ * Update 1.2 feature
+ * 
+ *
+ *
+ * */
