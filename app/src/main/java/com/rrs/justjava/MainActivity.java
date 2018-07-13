@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
  *   that way teh single source of truth would be this global variable
  *
  * Update 1.2 feature
- * 
+ *
  *
  *
  * */
